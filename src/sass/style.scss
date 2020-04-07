@@ -1,36 +1,111 @@
-html, body {
+html {
+  margin: 0;
+  padding: 0;
+} 
+
+.v-fall {
   margin: 0;
   padding: 0;
   background-color: #e6e6e6;
   font-family: 'Roboto', sans-serif;
   color: #000000;
+
+  .btn {
+    width: 303px;
+    height: 66px;
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+  
+    &-default {
+      background-color: #1dee93;
+    }
+  
+    &-disabled {
+      background-color: #c6c6c6;
+    }
+  
+    &-link {
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      padding: 24px 0;
+      height: auto;
+    }
+  }
 }
 
-.btn {
-  width: 303px;
-  height: 66px;
-  box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
-  border: none;
-  outline: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
+.ladines {
+  margin: 0;
+  padding: 0;
+  background-color: #141414;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
 
-  &-default {
-    background-color: #1dee93;
+  .btn {
+    width: 281px;
+    height: 74px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 23px;  
+    font-weight: 400;
+    border-radius: 54px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    &-default {
+      background-color: #2ba5cf;
+      padding: 0 40px;
+    }
+  
+    &-disabled {
+      background-color: #c6c6c6;
+    }
+  
+    &-link {
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      padding: 24px 0;
+      height: auto;
+    }
   }
+}
 
-  &-disabled {
-    background-color: #c6c6c6;
-  }
+.showlaxy {
+  margin: 0;
+  padding: 0;
+  background-color: #141534;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
 
-  &-link {
-    text-decoration: none;
-    display: block;
-    margin: 0 auto;
-    padding: 24px 0;
-    height: auto;
+  .btn {
+    border: none;
+    outline: none;
+    font-size: 23px;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 30px;
+    background: transparent;
+    width: 265px;
+    justify-content: space-between;
+    color: #9b9db4;
+  
+    &-link {
+      text-decoration: none;
+      display: block;
+      margin: 0 auto;
+      padding: 24px 0;
+      height: auto;
+    }
   }
 }
 
@@ -126,7 +201,7 @@ html, body {
     }
 
     &__search:before {
-      content: url('../img/search.png');
+      content: url('../img/v-fall/search.png');
       width: 16px;
       height: 16px;
       position: absolute;
@@ -188,7 +263,7 @@ html, body {
 
       &__prev {
         margin-left: 80px;
-        background: transparent url(../img/arrow.png)no-repeat;
+        background: transparent url(../img/v-fall/arrow.png)no-repeat;
         width: 27px;
         height: 42px;
         border: none;
@@ -196,7 +271,7 @@ html, body {
         cursor: pointer;
 
         &:hover {
-          background: transparent url(../img/arrow-hover.png)no-repeat;
+          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
           transform: rotate(-180deg);
         }
       }
@@ -204,7 +279,7 @@ html, body {
       &__next {
         margin-right: 80px;
         margin-left: 80px;
-        background: transparent url(../img/arrow.png)no-repeat;
+        background: transparent url(../img/v-fall/arrow.png)no-repeat;
         width: 27px;
         height: 42px;
         border: none;
@@ -213,7 +288,7 @@ html, body {
         cursor: pointer;
 
         &:hover {
-          background: transparent url(../img/arrow-hover.png)no-repeat;
+          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
           transform: rotate(0deg);
         }
       }
@@ -274,7 +349,7 @@ html, body {
         }
 
         &-left {
-          background: transparent url(../img/arrow-hover.png)no-repeat;
+          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
           width: 27px;
           height: 42px;
           margin-left: 24px;
@@ -287,7 +362,7 @@ html, body {
         }
 
         &-right {
-          background: transparent url(../img/arrow-hover.png)no-repeat;
+          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
           width: 27px;
           height: 42px;
           margin-right: 24px;
@@ -528,7 +603,7 @@ html, body {
       }
 
       &-btn {
-        background: url(../img/play.png)no-repeat;
+        background: url(../img/v-fall/play.png)no-repeat;
         margin: auto;
         display: block;
         border: none;
@@ -608,3 +683,1649 @@ html, body {
     }
   }
 }
+
+.ladines {
+  &__container {
+    width: 1330px;
+    margin: auto;
+
+    &--main {
+      padding-bottom: 130px;
+      padding-top: 473px;
+      margin-top: 0px;
+    }
+
+    &--list {
+      padding-bottom: 80px;
+    }
+
+    &--not-found {
+      height: calc(100vh - 184px);
+    }
+  }
+
+  &-header {
+    &:after {
+      background-image: linear-gradient(to right, #f79627 0%, #ee542e 19%, #b3407e 39%, #77417a 57%, #2264af 79%, #2faecd 100%);
+      height: 8px;
+      width: 100%;
+      position: absolute;
+      content: '';
+      bottom: -8px;
+    }
+  }
+
+  &-footer {
+    &:before {
+      background-image: linear-gradient(to right, #f79627 0%, #ee542e 19%, #b3407e 39%, #77417a 57%, #2264af 79%, #2faecd 100%);
+      height: 8px;
+      width: 100%;
+      position: absolute;
+      content: '';
+      top: -8px;
+    }
+
+    &__social {
+
+      &-nav {
+        display: flex;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+        margin-right: 26px;
+      }
+
+      &-link {
+        border-radius: 50%;
+        width: 43px;
+        height: 43px;
+        border: 1px solid #2fadcd;
+        margin-right: 23px;
+        display: inline-block;
+        display: flex;
+
+        img {
+          margin: auto;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-header,
+  &-footer {
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+    background-color: #141414;
+    height: 96px;
+    position: relative;
+
+    &__link {
+      color: #fff;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: 700;
+
+      &:hover {
+        color: #2ba5cf;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__search {
+      height: 42px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    &__input {
+      width: 243px;
+      height: 100%;
+      outline: none;
+      border: none;
+      background-color: #2c2c2c;
+      color: #fff;
+      padding-left: 48px;
+      position: relative;
+      border-radius: 33px;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    &__search:before {
+      content: url('../img/ladines/search.png');
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      left: 21px;
+      top: 13px;
+      display: block;
+      z-index: 1;
+    }
+  }
+
+  &-main {
+    &-slider {
+      height: 479px;
+      margin-top: 8px;
+      position: absolute!important;
+      max-height: 479px;
+    }
+
+    &-slide {
+      position: relative;
+
+      &__controls {
+        position: relative;
+        top: 225px;
+        display: flex;
+        justify-content: space-between;
+        width: 83%;
+        z-index: 100;
+        margin: auto;
+      }
+
+      &__content {
+        position: absolute;
+        bottom: 42px;
+        left: 80px;
+      }
+
+      &__title {
+        font-size: 42px;
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      &__label {
+        color: #c6c6c6;
+        font-size: 14px;
+      }
+
+      &__text {
+        margin-right: 12px;
+        text-transform: uppercase;
+
+        &:last-child {
+          font-weight: 700;
+          margin-right: 0;
+        }
+      }
+
+      &__prev {
+        background:  rgba(255, 255, 255, 0.2) url(../img/ladines/arrow.png)no-repeat center center;
+        width: 91px;
+        height: 91px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: relative;
+        border-radius: 50%;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2) url(../img/ladines/arrow-hover.png)no-repeat center center;
+          transform: rotate(-180deg);
+        }
+      }
+
+      &__next {
+        background: rgba(255, 255, 255, 0.2) url(../img/ladines/arrow.png)no-repeat center center;
+        width: 91px;
+        height: 91px;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        transform: rotate(-180deg);
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.2) url(../img/ladines/arrow-hover.png)no-repeat center center;
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    &--page-list {
+      .ladines__container {
+        padding-top: 1px;
+      }
+      .ladines-main-block__item {
+        margin-bottom: 40px;
+      }
+    }
+
+    &--page-news {
+      .ladines__container {
+        padding-top: 1px;
+      }
+      .ladines-main-block__item {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-block {
+      margin-top: 67px;
+
+      &__carousel {
+        border-radius: 6px;
+        margin: 70px -35px 0;
+        background-color: #2c2c2c;
+        padding: 44px 0 30px;
+        position: relative;
+
+        .ladines-main-block__header {
+          padding-left: 54px;
+        }
+
+        .owl-item {
+          padding: 15px 0 0;
+        }
+
+        .ladines-main-block__item {
+          &:hover {
+            .ladines-main-block__img {
+              transform: scale(1.05);
+              transition: .5s;
+            }
+          }
+        }
+
+        .ladines-main-block__container {
+          padding: 0 110px;
+          width: auto;
+        }
+
+        &-btn {
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          top: 49%;
+        }
+
+        &-left {
+          background: transparent url(../img/ladines/arrow-hover.png)no-repeat 100% 100%;
+          background-size: cover;
+          width: 42px;
+          height: 42px;
+          margin-left: 36px;
+          transform: rotate(-180deg);
+          border: none;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+          z-index: 100;
+        }
+
+        &-right {
+          background: transparent url(../img/ladines/arrow-hover.png)no-repeat;
+          background-size: cover;
+          width: 42px;
+          height: 42px;
+          margin-right: 36px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+          z-index: 100;
+        }
+      }
+
+      &__item {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        width: 195px;
+
+        &--lg {
+          width: 285px;
+
+          .ladines-main-block__img {
+            width: 285px;
+            height: 212px;
+          }
+        }
+
+        &:hover {
+          .ladines-main-block__text {
+            color: #2ba5cf;
+          }
+        }
+      }
+
+      &__btn {
+        margin: 36px auto 0;
+      }
+
+      &__img {
+        width: 195px;
+        height: 286px;
+      }
+
+      &__header {
+        text-align: left;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 37px;
+        margin: 0;
+      }
+
+      &__container {
+        display: flex;
+        margin-top: 37px;
+        justify-content: space-between;
+      }
+
+      &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 22px;
+        margin: 15px 0 0 0;
+      }
+
+      &__subtitle {
+        text-align: left;
+        color: #c6c6c6;
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      &__text {
+        font-size: 26px;
+        color: #ffffff;
+        height: 120px;
+        overflow: hidden;
+      }
+
+      &__elem {
+        color: #c6c6c6;
+        font-size: 12px;
+        margin-right: 12px;
+
+        &:last-child {
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-news {
+    &-block {
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 30px;
+
+      &__head {
+        font-size: 20px;
+
+        span {
+          &:after {
+            content: '/';
+            display: inline-block;
+            margin: 0 3px;
+          }
+
+          &:last-child {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+
+      &__sort {
+        width: 440px;
+        position: relative;
+
+        &:before {
+          width: 10px;
+          height: 10px;
+          z-index: 1;
+          position: absolute;
+          right: 7px;
+          top: 20px;
+          content: '';
+          background-color: #2c2c2c;
+        }
+
+        &:after {
+          width: 10px;
+          height: 7px;
+          content: '';
+          position: absolute;
+          background: url(../img/ladines/select-arr.png)no-repeat;
+          right: 21px;
+          z-index: 2;
+        }
+
+        p {
+          font-size: 24px;
+          color: #c6c6c6;
+          margin: 0 30px 0 0;
+        }
+
+        &-input {
+          display: none;
+        }
+
+        &-text {
+          position: absolute;
+          display: block;
+          top: 0;
+          padding-left: 10px;
+        }
+
+        &-select {
+          background-color: #2c2c2c;
+          width: 303px;
+          height: 52px;
+          box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+          border-radius: 28px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #fff;
+          border: none;
+          outline: none;
+          padding: 0 21px 0 34px;
+        }
+      }
+
+      &__content {
+        width: 630px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__img {
+        border-radius: 8px;
+        width: 333px;
+      }
+
+      &__header {
+        line-height: 40px;
+        font-size: 30px;
+        width: 266px;
+        font-weight: 400;
+        margin: 0;
+      }
+
+      &__btn {
+        margin: 120px auto 0;
+      }
+    }
+  }
+
+  &-not-found {
+    text-align: center;
+    margin: auto;
+
+    &__img {
+      margin-bottom: 100px;
+    }
+
+    &__text {
+      margin: 0 0 28px;
+      font-size: 40px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #c6c6c6;
+    }
+
+    &__subtext {
+      color: #c6c6c6;
+      font-size: 20px;
+
+      a {
+        color: #f79b26;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-contacts {
+    &__block {
+      padding: 150px 0px 70px;
+      position: relative;
+
+      &:last-child {
+        padding: 90px 0 150px;
+
+        .ladines-contacts__header,
+        .ladines-contacts__subheader {
+          color: #f79b26;
+        }
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        height: 8px;
+        width: 100%;
+        background-image: linear-gradient(to right, #f79627 0%, #ee542e 19%, #b3407e 39%, #77417a 57%, #2264af 79%, #2faecd 100%);
+      }
+    }
+
+    &__header {
+      font-size: 48px;
+      font-weight: 900;
+      color: #ffffff;
+      margin: 0 0 43px;
+    }
+
+    &__subheader {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffffff;
+    }
+
+    &__text {
+      color: #c6c6c6;
+      font-size: 20px;
+      margin: 70px 0 0 0;
+    }
+  }
+
+  &-inner {
+    &__block {
+      padding: 74px 196px 39px;
+
+      &-poster {
+        padding-top: 39px;
+      }
+
+      &-container {
+        padding-top: 68px;
+
+        &.ladines-main-block {
+          margin: 0;
+        }
+
+        &:last-child {
+          padding: 0 0 130px;
+        }
+      }
+
+      &:last-child {
+        padding: 85px 49px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+
+      &-description {
+        max-width: 580px;
+        padding-top: 20px;
+      }
+
+      &-slide {
+        color: #ee552f;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.26px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 14px 0 0 0;
+      }
+
+      &-list {
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+
+      &-item {
+        margin-bottom: 12px;
+
+        span {
+          width: 110px;
+          display: inline-block;
+          color: #2ba5cf;
+
+          &:last-child {
+            width: auto;
+            color: #ffffff;
+            font-weight: 400;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 26px;
+        height: 176px;
+        overflow: hidden;
+        color: #c6c6c6;
+      }
+    }
+
+    &__header {
+      text-transform: uppercase;
+      font-size: 48px;
+      font-weight: 900;
+      color: #141414;
+      margin: 0;
+    }
+
+    &__subheader {
+      font-size: 20px;
+      font-weight: 400;
+      color: #1c433f;
+      margin: -5px 0 40px;
+    }
+
+    &__video {
+      position: relative;
+
+      &-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+      }
+
+      &-btn {
+        background: url(../img/ladines/play.png)no-repeat;
+        margin: auto;
+        display: block;
+        border: none;
+        outline: none;
+        width: 78px;
+        height: 78px;
+        cursor: pointer;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-article {
+    &-block {
+      padding: 65px 0 0;
+
+      &__header {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+        color: #fff;
+      }
+
+      &__poster {
+        margin-top: 56px;
+      }
+
+      &__content {
+        padding: 73px 54px 94px 0px;
+
+        &--left {
+          padding-right: 60px;
+        }
+      }
+
+      &__subheader {
+        margin: 0 0 38px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #c6c6c6;
+      }
+
+      &__text {
+        margin: 0 0 38px;
+        font-size: 20px;
+        color: #c6c6c6;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__subposter {
+        margin-left: 0;
+        margin-bottom: 63px;
+      }
+
+      &__quote {
+        padding: 49px 64px;
+        font-weight: 700;
+        font-size: 30px;
+        border: 4px solid #ffffff;
+        color: #fff;
+      }
+
+      &__promo {
+        margin-top: 26px;
+      }
+
+      &__related {
+        margin-top: 111px;
+
+        &-header {
+          font-size: 29px;
+          font-weight: 700;
+          color: #f79b26;
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+
+  &-modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 100;
+    overflow-y: scroll;
+
+    &__close {
+      background: url(../img/ladines/close.png)no-repeat;
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      right: -63px;
+      cursor: pointer;
+    }
+
+    &__header {
+      padding: 26px 43px;
+      color: #fff;
+
+      &-title {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      &-subtitle {
+        font-size: 20px;
+        margin: 0;
+        font-weight: 400;
+        color: #c6c6c6;
+      }
+    }
+
+    &__content {
+      text-align: center;
+      position: relative;
+
+      &:after {
+        background-image: linear-gradient(to right, #f79627 0%, #ee542e 19%, #b3407e 39%, #77417a 57%, #2264af 79%, #2faecd 100%);
+        bottom: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 8px;
+      }
+
+      &-video {
+        margin: auto;
+        position: relative;
+        width: 805px;
+        height: 456px;
+      }
+
+      &-mask {
+        position: absolute;
+        background: rgba(255, 255, 255, .5);
+        top: 0;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      &-btn {
+        border: none;
+        outline: none;
+        background: url(../img/ladines/play.png)no-repeat;
+        width: 78px;
+        height: 78px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &__footer {
+      margin-top: 70px;
+      padding: 0 80px 75px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__container {
+      background-color: #1b1b1b;    
+      z-index: 101;
+      margin-top: 55px;
+      width: 1097px;
+      border-radius: 10px;
+      margin: 120px auto 60px;
+      position: relative;
+    }
+  }
+}
+
+.showlaxy {
+  &__container {
+    width: 1330px;
+    margin: auto;
+
+    &--main {
+      padding-bottom: 130px;
+      padding-top: 473px;
+      margin-top: 0px;
+    }
+
+    &--list {
+      padding-bottom: 80px;
+    }
+
+    &--not-found {
+      height: calc(100vh - 184px);
+    }
+  }
+
+  &-block {
+    width: 100%;
+  }
+
+  &-header {
+    .showlaxy__container {
+      height: 100%;
+    }
+
+    &-top {
+      background-color: #2b2c6a;
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+      height: 117px;
+      width: 100%;
+    }
+
+    &__mask {
+      width: 129px;
+    }
+
+    &-bottom {
+      width: 100%;
+      height: 68px;
+      background-color: #18173c;
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+    }
+
+    &__nav {
+      text-align: center;
+      margin: auto;
+    }
+  }
+
+  &-header,
+  &-footer {
+    &__link {
+      color: #9b9db4;
+      font-size: 18px;
+      text-transform: uppercase;
+      margin-right: 78px;
+      text-decoration: none;
+      font-weight: 700;
+
+      &:hover {
+        color: #7c4fa7;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__search {
+      height: 42px;
+      font-size: 14px;
+      position: relative;
+    }
+
+    &__input {
+      width: 785px;
+      height: 100%;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      background-color: #1c1d49;
+      color: #fff;
+      padding-left: 21px;
+      position: relative;
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    &__search:before {
+      content: url('../img/showlaxy/search.png');
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      right: 21px;
+      top: 13px;
+      display: block;
+      z-index: 1;
+    }
+  }
+
+  &-footer {
+    .showlaxy__container {
+      height: 100%;
+    }
+
+    &__link {
+      margin-right: 78px;
+    }
+
+    &__social {
+
+      &-nav {
+        display: flex;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        color: #ffffff;
+        margin-right: 26px;
+      }
+
+      &-link {
+        border-radius: 50%;
+        width: 43px;
+        height: 43px;
+        background-color: #9b9db4;
+        margin-right: 23px;
+        display: inline-block;
+        display: flex;
+
+        img {
+          margin: auto;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &-top {
+      background-color: #2b2c6a;
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+      height: 117px;
+      width: 100%;
+    }
+
+    &__mask {
+      width: 129px;
+    }
+
+    &-bottom {
+      width: 100%;
+      height: 68px;
+      background-color: #18173c;
+      box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+    }
+
+    &__nav {
+      text-align: center;
+    }
+  }
+
+  &-news {
+    &-block {
+      color: #ffffff;
+      text-decoration: none;
+      margin-bottom: 30px;
+
+      &:hover {
+        .showlaxy-news-block__header {
+          color: #fff;
+        }
+      }
+
+      &__head {
+        font-size: 20px;
+
+        span {
+          &:after {
+            content: '/';
+            display: inline-block;
+            margin: 0 3px;
+          }
+
+          &:last-child {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+
+      &__top {
+        margin-bottom: 50px;
+      }
+
+      &__sort {
+        width: 440px;
+        position: relative;
+
+        &:before {
+          width: 10px;
+          height: 10px;
+          z-index: 1;
+          position: absolute;
+          right: 7px;
+          top: 20px;
+          content: '';
+          background-color: #1c1d49;
+        }
+
+        &:after {
+          width: 10px;
+          height: 7px;
+          content: '';
+          position: absolute;
+          background: url(../img/showlaxy/select-arr.png)no-repeat;
+          right: 21px;
+          z-index: 2;
+        }
+
+        p {
+          font-size: 24px;
+          color: #c6c6c6;
+          margin: 0 30px 0 0;
+        }
+
+        &-input {
+          display: none;
+        }
+
+        &-text {
+          position: absolute;
+          display: block;
+          top: 0;
+          padding-left: 10px;
+        }
+
+        &-select {
+          background-color: #1c1d49;
+          width: 303px;
+          height: 52px;
+          box-shadow: 0 0 22px rgba(0, 0, 0, 0.16);
+          border-radius: 6px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #fff;
+          border: none;
+          outline: none;
+          padding: 0 21px 0 34px;
+        }
+      }
+
+      &__content {
+        width: 630px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__img {
+        border-radius: 8px;
+        width: 333px;
+      }
+
+      &__header {
+        line-height: 40px;
+        font-size: 30px;
+        width: 266px;
+        font-weight: 400;
+        margin: 0;
+        color: #9b9db4;
+      }
+
+      &__btn {
+        margin: 60px auto 0;
+      }
+    }
+  }
+
+  &-contacts {
+    hr {
+      background-color: #1e204c;
+      width: 100%;
+      height: 4px;
+      border: none;
+    }
+  }
+
+  &-main {
+    &-slider {
+      height: 479px;
+      margin-top: 35px;
+      position: absolute!important;
+      max-height: 479px;
+    }
+
+    &-slide {
+      position: relative;
+
+      &__controls {
+        position: relative;
+        top: 245px;
+        display: flex;
+        justify-content: flex-end;
+        width: 85%;
+        z-index: 100;
+        margin: auto;
+      }
+
+      &__content {
+        position: absolute;
+        bottom: 42px;
+        left: 80px;
+      }
+
+      &__title {
+        font-size: 42px;
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      &__label {
+        color: #57eeab;
+        font-size: 14px;
+      }
+
+      &__text {
+        margin-right: 12px;
+        text-transform: uppercase;
+
+        &:last-child {
+          font-weight: 700;
+          margin-right: 0;
+        }
+      }
+
+      &__next {
+        background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+        width: 25px;
+        height: 47px;
+        border: none;
+        outline: none;
+        transform: rotate(-180deg);
+        cursor: pointer;
+      }
+    }
+
+    &--page-list {
+      .showlaxy__container {
+        padding-top: 1px;
+      }
+      .showlaxy-main-block__item {
+        margin-bottom: 40px;
+      }
+    }
+
+    &--page-news {
+      .showlaxy__container {
+        padding-top: 1px;
+      }
+      .showlaxy-main-block__item {
+        margin-bottom: 40px;
+      }
+    }
+
+    &-block {
+      margin-top: 67px;
+      position: relative;
+
+      &__carousel {
+        margin: 70px -35px 100px;
+        background-color: #1d1e4c;
+        border-radius: 6px;
+        padding: 44px 0 30px;
+        position: relative;
+
+        .showlaxy-main-block__header {
+          padding-left: 54px;
+        }
+
+        .owl-item {
+          padding: 15px 0 0;
+        }
+
+        .showlaxy-main-block__item {
+          &:hover {
+            .showlaxy-main-block__img {
+              transform: scale(1.05);
+              transition: .5s;
+            }
+          }
+        }
+
+        .showlaxy-main-block__container {
+          padding: 0 73px;
+          width: auto;
+        }
+
+        &-btn {
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          top: 49%;
+        }
+
+        &-left {
+          background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+          width: 25px;
+          height: 47px;
+          margin-left: 24px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+          z-index: 100;
+        }
+
+        &-right {
+          background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+          width: 25px;
+          height: 47px;
+          margin-right: 24px;
+          transform: rotate(-180deg);
+          border: none;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+          z-index: 100;
+        }
+      }
+
+      &__item {
+        display: block;
+        text-decoration: none;
+        color: #000000;
+        width: 195px;
+
+        &--lg {
+          width: 294px;
+
+          .showlaxy-main-block__img {
+            width: 294px;
+            height: 286px;
+          }
+        }
+
+        &:hover {
+          .showlaxy-main-block__text {
+            color: #7c4fa7;
+          }
+        }
+      }
+
+      &__btn {
+        margin: 36px auto 0;
+      }
+
+      &__img {
+        width: 195px;
+        height: 286px;
+      }
+
+      &__header {
+        text-align: left;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 29px;
+        margin: 0;
+      }
+
+      &__container {
+        display: flex;
+        padding: 0;
+        margin-top: 37px;
+        justify-content: space-between; 
+
+        &-animate {
+          &-next {
+            position: absolute;
+            width: 25px;
+            height: 47px;
+            right: -40px;
+            background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+            border: none;
+            outline: none;
+            transform: rotate(180deg) translateY(50%);
+            top: 50%;
+            cursor: pointer;
+          }
+        }
+      }
+
+      &__title {
+        font-size: 20px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 22px;
+        margin: 15px 0 0 0;
+      }
+
+      &__subtitle {
+        text-align: left;
+        color: #9b9db4;        
+        font-size: 16px;
+        margin-top: 10px;
+      }
+
+      &__text {
+        font-size: 26px;
+        color: #9b9db4;
+        height: 120px;
+        overflow: hidden;
+      }
+
+      &__elem {
+        font-size: 12px;
+        margin-right: 12px;
+        color: #9b9db4;
+
+        &:last-child {
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &-not-found {
+    text-align: center;
+    margin: auto;
+
+    &__img {
+      margin-bottom: 90px;
+    }
+
+    &__text {
+      margin: 0 0 65px;
+      font-size: 40px;
+      font-weight: 700;
+      color: #9b9db4;
+    }
+
+    &__subtext {
+      color: #9b9db4;
+      font-size: 20px;
+
+      a {
+        color: #7c4fa7;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &-contacts {
+    &__block {
+      padding: 97px 0;
+
+      &:last-child {
+        padding: 85px 0;
+
+        .showlaxy-contacts__subheader,
+        .showlaxy-contacts__header {
+          color: #9b9db4;
+        }
+      }
+    }
+
+    &__header {
+      font-size: 30px;
+      font-weight: 700;
+      color: #ffffff;
+      margin: 0 0 43px;
+    }
+
+    &__subheader {
+      font-size: 30px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    &__text {
+      font-size: 20px;
+      color: #9b9db4;
+      line-height: 30px;
+    }
+  }
+
+  &-inner {
+    &__block {
+      padding: 74px 196px 39px;
+
+      &-poster {
+        padding-top: 39px;
+      }
+
+      &-container {
+        padding-top: 68px;
+
+        &.showlaxy-main-block {
+          margin: 0;
+        }
+
+        &:last-child {
+          padding: 0 0 130px;
+        }
+      }
+
+      &:last-child {
+        padding: 85px 49px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+
+      &-description {
+        max-width: 580px;
+        padding-top: 20px;
+      }
+
+      &-slide {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.26px;
+        text-transform: uppercase;
+        cursor: pointer;
+        margin: 14px 0 0 0;
+      }
+
+      &-list {
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+
+      &-item {
+        margin-bottom: 12px;
+
+        span {
+          width: 110px;
+          display: inline-block;
+          color: #7c4fa7;
+
+          &:last-child {
+            width: auto;
+            font-weight: 700;
+            color: #ffffff;
+          }
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &-text {
+        font-size: 18px;
+        line-height: 26px;
+        height: 176px;
+        overflow: hidden;
+        color: #9b9db4;
+      }
+    }
+
+    &__header {
+      font-size: 40px;
+      font-weight: 900;
+      color: #ffffff;
+      margin: 0;
+    }
+
+    &__subheader {
+      font-size: 20px;
+      font-weight: 400;
+      color: #9b9db4;
+      margin: -5px 0 40px;
+    }
+
+    &__video {
+      position: relative;
+
+      &-mask {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        display: flex;
+      }
+
+      &-btn {
+        background: url(../img/showlaxy/play.png)no-repeat;
+        margin: auto;
+        display: block;
+        border: none;
+        outline: none;
+        width: 78px;
+        height: 78px;
+        cursor: pointer;
+        z-index: 1;
+      }
+    }
+  }
+
+  &-article {
+    &-block {
+      padding: 65px 0 0;
+
+      &__header {
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 0;
+        color: #ffffff;
+      }
+
+      &__poster {
+        margin-top: 56px;
+      }
+
+      &__content {
+        padding: 73px 54px 94px 0px;
+
+        &--left {
+          padding-right: 60px;
+        }
+      }
+
+      &__subheader {
+        margin: 0 0 38px;
+        font-size: 30px;
+        font-weight: 700;
+        color: #9b9db4;
+      }
+
+      &__text {
+        margin: 0 0 38px;
+        font-size: 20px;
+        color: #9b9db4;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__subposter {
+        margin-left: 0px;
+        margin-bottom: 63px;
+      }
+
+      &__quote {
+        padding: 50px 64px;
+        color: #ffffff;
+        border: 4px solid #ffffff;
+        font-weight: 700;
+        font-size: 30px;
+      }
+
+      &__promo {
+        margin-top: 26px;
+      }
+
+      &__related {
+        margin-top: 111px;
+
+        &-header {
+          font-size: 29px;
+          font-weight: 700;
+          color: #57eeab;
+          margin-bottom: 23px;
+        }
+      }
+    }
+  }
+}
+
+
+
