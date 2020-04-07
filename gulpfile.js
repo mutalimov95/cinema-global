@@ -10,13 +10,11 @@ const del = require('del');
 const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const imagemin = require('gulp-imagemin');
-const path = require('path');
 const plumber = require('gulp-plumber');
 const postcss = require('gulp-postcss');
 const pug = require('gulp-pug');
 const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
 const html2pug = require('gulp-html2pug');
 
@@ -26,7 +24,6 @@ const html2pug = require('gulp-html2pug');
  */
 const options = {
 	uglifyJS: true,
-	sourceMaps: true,
 	useBabel: true,
 };
 
@@ -63,13 +60,11 @@ const paths = {
 gulp.task('javascript', function () {
 	return gulp.src([paths.input.js + 'vendor/**/*.js', paths.input.js + '**/*.js'])
 	.pipe(plumber())
-	.pipe(gulpif(options.sourceMaps, sourcemaps.init()))
 	.pipe(gulpif(options.useBabel, babel({
 		presets: ['@babel/preset-env']
 	})))
 	.pipe(concat('script.js'))
 	.pipe(gulpif(options.uglifyJS, uglify()))
-	.pipe(gulpif(options.sourceMaps, sourcemaps.write('../maps')))
 	.pipe(gulp.dest(paths.output.js))
 	.pipe(browserSync.reload({
 		stream: true
@@ -86,22 +81,6 @@ gulp.task('image-min', function () {
 	.pipe(changed(paths.output.images))
 	.pipe(imagemin())
 	.pipe(gulp.dest(paths.output.images));
-});
-
-/**
- * Compile .pug files and pass in data from json file
- * Example: index.pug - index.pug.json
- * Компилируем .pug файлы и передаем в них данные из файла json
- * Образец: в index.pug передаются данные из index.pug.json
- */
-gulp.task('pug', function () {
-	return gulp.src('./src/*.pug')
-	.pipe(plumber())
-	.pipe(pug({pretty: true}))
-	.pipe(gulp.dest(paths.public))
-	.pipe(browserSync.reload({
-		stream: true
-	}));
 });
 
 
@@ -126,37 +105,6 @@ gulp.task('build-clean', function () {
 });
 
 /**
- * Recompile .pug files and live reload the browser
- * Компилируем .pug файлы и перезагружаем браузер
- */
-gulp.task('rebuild', ['pug'], function () {
-	browserSync.reload();
-});
-
-/**
- * Launch the browser-sync Server
- * Запускаем сервер browser-sync
- */
-gulp.task('browser-sync', function () {
-	browserSync({
-		server: {
-			baseDir: paths.public
-		},
-		notify: false
-	});
-});
-
-/**
- * Task group for development
- * Группа задач для разработки
- */
-gulp.task('develop', function () {
-	runSequence('build-clean',
-		['sass', 'javascript', 'image-min', 'pug'],
-		'browser-sync');
-});
-
-/**
  * Building distributive
  * Создаем дистрибутив
  */
@@ -164,10 +112,6 @@ gulp.task('build-dist', function () {
 	runSequence('build-clean',
 		['sass', 'javascript', 'image-min', 'pug-prod']);
 });
-
-/*gulp.task('pug-prod', function () {
-	runSequence(['pug-public-vfall', 'pug-public-ladines', 'pug-public-showlaxy']);
-});*/
 
 /**
  * Compile .scss files
@@ -180,13 +124,11 @@ gulp.task('build-dist', function () {
 gulp.task('sass', function () {
 	return gulp.src(paths.input.sass + '*.scss')
 	.pipe(plumber())
-	.pipe(gulpif(options.sourceMaps, sourcemaps.init()))
 	.pipe(sass({
 		includePaths: [paths.input.sass],
 		outputStyle: 'compressed'
 	}))
 	.pipe(postcss([autoprefixer()]))
-	.pipe(gulpif(options.sourceMaps, sourcemaps.write('../maps')))
 	.pipe(gulp.dest(paths.output.css))
 	.pipe(browserSync.reload({
 		stream: true
@@ -194,24 +136,6 @@ gulp.task('sass', function () {
 });
 
 /**
- * Watch files for changes
- * Следим за изменением файлов
- */
-gulp.task('watch', function () {
-	gulp.watch(paths.input.sass + '**/*.scss', ['sass']);
-	gulp.watch(paths.input.js + '**/*.js', ['javascript']);
-	gulp.watch(paths.input.images + '**/*', ['image-min']);
-	gulp.watch(['./src/*.pug'], ['pug']);
-});
-
-/**
  * Shorthand for build-dist
- * Сокращение для создания дистрибутива
  */
 gulp.task('build', ['build-dist']);
-
-/**
- * Default task for development, fast-start by 'gulp' command
- * Задача "по умолчанию", быстрый запуск коммандой 'gulp'
- */
-gulp.task('default', ['develop', 'watch']);
