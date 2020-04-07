@@ -110,28 +110,11 @@ gulp.task('pug-prod', function () {
 	return gulp.src('./src/html/templates/**/*.pug')
 	.pipe(plumber())
 	.pipe(pug({pretty: true}))
-	.pipe(gulp.dest(paths.public))
+	.pipe(html2pug())
+	.pipe(gulp.dest(paths.public + '/views/'))
 	.pipe(browserSync.reload({
 		stream: true
 	}));
-});
-
-gulp.task('pug-public-vfall', function () {
-	return gulp.src('./public/v-fall/*.html')
-	.pipe(html2pug())
-	.pipe(gulp.dest(paths.public + 'views/v-fall/'))
-});
-
-gulp.task('pug-public-ladines', function () {
-	return gulp.src('./public/ladines/*.html')
-	.pipe(html2pug())
-	.pipe(gulp.dest(paths.public + 'views/ladines/'))
-});
-
-gulp.task('pug-public-showlaxy', function () {
-	return gulp.src('./public/showlaxy/*.html')
-	.pipe(html2pug())
-	.pipe(gulp.dest(paths.public + 'views/showlaxy/'))
 });
 
 /**
@@ -182,9 +165,9 @@ gulp.task('build-dist', function () {
 		['sass', 'javascript', 'image-min', 'pug-prod']);
 });
 
-gulp.task('pug-prod', function () {
+/*gulp.task('pug-prod', function () {
 	runSequence(['pug-public-vfall', 'pug-public-ladines', 'pug-public-showlaxy']);
-});
+});*/
 
 /**
  * Compile .scss files
