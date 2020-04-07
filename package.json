@@ -20,6 +20,7 @@
     "gulp-changed": "^3.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-data": "^1.2.0",
+    "gulp-html2pug": "^1.2.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "^1.2.1",

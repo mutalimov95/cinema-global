@@ -18,6 +18,7 @@ const runSequence = require('run-sequence');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglify');
+const html2pug = require('gulp-html2pug');
 
 /**
  * List of options
@@ -38,7 +39,8 @@ const paths = {
 		sass: './src/sass/',
 		data: './src/_data/',
 		js: './src/js/',
-		images: './src/img/'
+		images: './src/img/',
+		templates: '.src/html/public/'
 	},
 	output: {
 		css: './public/css/',
@@ -102,6 +104,36 @@ gulp.task('pug', function () {
 	}));
 });
 
+
+// Specific task for backend only solution
+gulp.task('pug-prod', function () {
+	return gulp.src('./src/html/templates/**/*.pug')
+	.pipe(plumber())
+	.pipe(pug({pretty: true}))
+	.pipe(gulp.dest(paths.public))
+	.pipe(browserSync.reload({
+		stream: true
+	}));
+});
+
+gulp.task('pug-public-vfall', function () {
+	return gulp.src('./public/v-fall/*.html')
+	.pipe(html2pug())
+	.pipe(gulp.dest(paths.public + 'views/v-fall/'))
+});
+
+gulp.task('pug-public-ladines', function () {
+	return gulp.src('./public/ladines/*.html')
+	.pipe(html2pug())
+	.pipe(gulp.dest(paths.public + 'views/ladines/'))
+});
+
+gulp.task('pug-public-showlaxy', function () {
+	return gulp.src('./public/showlaxy/*.html')
+	.pipe(html2pug())
+	.pipe(gulp.dest(paths.public + 'views/showlaxy/'))
+});
+
 /**
  * Removing public folder with it contents
  * Удаляем папку public со всем ее содержимым
@@ -147,7 +179,11 @@ gulp.task('develop', function () {
  */
 gulp.task('build-dist', function () {
 	runSequence('build-clean',
-		['sass', 'javascript', 'image-min', 'pug']);
+		['sass', 'javascript', 'image-min', 'pug-prod']);
+});
+
+gulp.task('pug-prod', function () {
+	runSequence(['pug-public-vfall', 'pug-public-ladines', 'pug-public-showlaxy']);
 });
 
 /**
