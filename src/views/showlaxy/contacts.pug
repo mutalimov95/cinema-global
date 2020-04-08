@@ -3,7 +3,7 @@ html
   head
     title showlaxy Cinema
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='/assets/css/style.css')
     link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet")
@@ -14,7 +14,7 @@ html
         .showlaxy-header-top
           .showlaxy__container.grid.grid-v-center.grid-v-between
             .showlaxy-header__logo
-              img.showlaxy-header__img(src="img/showlaxy/logo-showlaxy.png", alt="showlaxy")
+              img.showlaxy-header__img(src="/assets/img/showlaxy/logo-showlaxy.png", alt="showlaxy")
             form.showlaxy-header__search
               input.showlaxy-header__input(type="text", placeholder="Найти")
             .showlaxy-header__mask
@@ -30,14 +30,23 @@ html
         
 
 
-    block content
+    main.showlaxy-main.showlaxy-contacts
+      .showlaxy__container.grid.grid-column.showlaxy__container--contacts
+        section.showlaxy__container--white.showlaxy-contacts__block
+          h2.showlaxy-contacts__header Свяжитесь с нами
+          h4.showlaxy-contacts__subheader Если у вас есть вопросы, предложения или комментарии о сайте, напишите нам по адресу wearevideout@gmail.com
+          p.showlaxy-contacts__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sedopk quia consequuntur magni dolores eos qui rationesopl voluptatem sequi nesciunt. Neque porro quisquameo est, qui dolorem ipsum quia dolor sit amet, eopsmiep consectetur, adipisci velit, seisud quia non numquam eius modi tempora incidunt ut labore et dolore wopeir magnam aliquam quaerat voluptatem eoplmuriquisqu
+        hr
+        section.showlaxy-contacts__block
+          h3.showlaxy-contacts__header Редакция
+          p.showlaxy-contacts__subheader Пишите сюда team@videout.ru, чтобы связаться с редакцией сайта. Не забудьте указать свои координаты — ваше имя, компанию и номер телефона.
 
     footer.showlaxy-footer.grid
       .grid.grid-v-center.grid-v-between.grid-column.showlaxy-block
         .showlaxy-footer-top
           .showlaxy__container.grid.grid-v-center.grid-v-around
             .showlaxy-footer__logo
-              img.showlaxy-footer__img(src="img/showlaxy/logo-showlaxy.png", alt="showlaxy")
+              img.showlaxy-footer__img(src="/assets/img/showlaxy/logo-showlaxy.png", alt="showlaxy")
             nav.showlaxy-footer__nav
               a.showlaxy-footer__link(href="#") Новинки
               a.showlaxy-footer__link(href="#") Фильмы
@@ -51,11 +60,11 @@ html
               span Присоединяйтесь
               .showlaxy-footer__social-nav
                 a.showlaxy-footer__social-link(href="#")
-                  img(src="img/showlaxy/vk.png")
+                  img(src="/assets/img/showlaxy/vk.png")
                 a.showlaxy-footer__social-link(href="#")
-                  img(src="img/showlaxy/fb.png")
+                  img(src="/assets/img/showlaxy/fb.png")
                 a.showlaxy-footer__social-link(href="#")
-                  img(src="img/showlaxy/ok.png")
+                  img(src="/assets/img/showlaxy/ok.png")
     script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-    script(src="js/script.js")
+    script(src="/assets/js/script.js")

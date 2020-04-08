@@ -1,0 +1,122 @@
+doctype html
+html
+  head
+    title ladines Cinema
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet' href='/assets/css/style.css')
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet")
+    
+  body.ladines
+    header.ladines-header.grid
+      .ladines__container.grid.grid-v-center.grid-v-between
+        .ladines-header__logo
+          img.ladines-header__img(src="/assets/img/ladines/logo-ladines.png", alt="ladines")
+        nav.ladines-header__nav
+          a.ladines-header__link(href="#") Новинки
+          a.ladines-header__link(href="#") Фильмы
+          a.ladines-header__link(href="#") Мультфильмы
+          a.ladines-header__link(href="#") Новости
+          a.ladines-header__link(href="#") Кинотеатры
+          a.ladines-header__link(href="#") Контакты
+        form.ladines-header__search
+          input.ladines-header__input(type="text", placeholder="Найти")
+
+
+    main.ladines-main.ladines-main--page-news
+      .ladines__container.ladines__container--white.ladines__container--main
+        section.ladines-main-block.grid.grid-column
+          .ladines-news-block__top.grid.grid-v-between
+            h2.ladines-main-block__header Новости
+            .ladines-news-block__sort.grid.grid-v-center
+              p Показать
+              select.ladines-news-block__sort-select(name='select')
+                option(value='rate') По полуряности
+                option(value='date') По дате
+                option(value='title') По названию
+                option(value='wtf') По щючьему велению заказчика
+          .ladines-main-block__container.grid.grid-wrap
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice 
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice
+            a(href="#").ladines-news-block
+              p.ladines-news-block__head
+                span 25.03.2019
+                span Новость
+              .ladines-news-block__content.grid
+                img.ladines-news-block__img(src="/assets/img/ladines/img9.jpg", alt="img")
+                h3.ladines-news-block__header Пратта и Смита облили зеленой слизью на премии Kids’ Choice 
+          button.ladines-news-block__btn.btn.btn-default(type="button") Загрузить еще
+            img(src="/assets/img/ladines/more.png", alt="More")
+        
+
+    footer.ladines-footer.grid
+      .ladines__container.grid.grid-v-center.grid-v-between
+        .ladines-footer__logo
+          img.ladines-footer__img(src="/assets/img/ladines/logo-ladines.png", alt="ladines")
+        nav.ladines-footer__nav
+          a.ladines-footer__link(href="#") Новинки
+          a.ladines-footer__link(href="#") Фильмы
+          a.ladines-footer__link(href="#") Мультфильмы
+          a.ladines-footer__link(href="#") Новости
+          a.ladines-footer__link(href="#") Кинотеатры
+          a.ladines-footer__link(href="#") Контакты
+        .ladines-footer__social.grid.grid-v-center
+          span Присоединяйтесь
+          .ladines-footer__social-nav
+            a.ladines-footer__social-link(href="#")
+              img(src="/assets/img/ladines/vk.png")
+            a.ladines-footer__social-link(href="#")
+              img(src="/assets/img/ladines/fb.png")
+            a.ladines-footer__social-link(href="#")
+              img(src="/assets/img/ladines/ok.png")
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
+    script(src="/assets/js/script.js")

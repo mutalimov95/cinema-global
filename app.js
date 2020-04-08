@@ -20,8 +20,34 @@ app.use(function (req, res, next) {
   next()
 })
 
-app.get('/v-fall', function (req, res) {
+app.get('/v-fall', function (req, res, next) {
     res.render('index');
+    next()
+});
+
+app.get('/error', function (req, res, next) {
+  res.render('error');
+  next()
+});
+
+app.get('/v-fall/news', function (req, res) {
+  res.render('news');
+});
+
+app.get('/v-fall/list', function (req, res) {
+  res.render('list');
+});
+
+app.get('/v-fall/inner', function (req, res) {
+  res.render('inner');
+});
+
+app.get('/v-fall/contacts', function (req, res) {
+  res.render('contacts');
+});
+
+app.get('/v-fall/article', function (req, res) {
+  res.render('article');
 });
 
 app.get('/ladines', function (req, res) {
