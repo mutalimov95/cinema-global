@@ -1,33 +1,13 @@
 main.v-fall-main
   section.v-fall-main-slider.owl-carousel
-    .v-fall-main-slide
-      img(src="img/v-fall/slide1.jpg", alt="")
-      .v-fall-main-slide__content
-        p.v-fall-main-slide__label
-          span.v-fall-main-slide__text 2019
-          span.v-fall-main-slide__text Мелодрамма
-        h3.v-fall-main-slide__title Фаворитка
-    .v-fall-main-slide
-      img(src="img/v-fall/slide1.jpg", alt="")
-      .v-fall-main-slide__content
-        p.v-fall-main-slide__label
-          span.v-fall-main-slide__text 2019
-          span.v-fall-main-slide__text Мелодрамма
-        h3.v-fall-main-slide__title Фаворитка
-    .v-fall-main-slide
-      img(src="img/v-fall/slide1.jpg", alt="")
-      .v-fall-main-slide__content
-        p.v-fall-main-slide__label
-          span.v-fall-main-slide__text 2019
-          span.v-fall-main-slide__text Мелодрамма
-        h3.v-fall-main-slide__title Фаворитка
-    .v-fall-main-slide
-      img(src="img/v-fall/slide1.jpg", alt="")
-      .v-fall-main-slide__content
-        p.v-fall-main-slide__label
-          span.v-fall-main-slide__text 2019
-          span.v-fall-main-slide__text Мелодрамма
-        h3.v-fall-main-slide__title Фаворитка
+    each post, index in posts
+      .v-fall-main-slide
+        img(src=post.image, alt="")
+        .v-fall-main-slide__content
+          p.v-fall-main-slide__label
+            span.v-fall-main-slide__text post.year
+            span.v-fall-main-slide__text post.category
+          h3.v-fall-main-slide__title #{post.title}
   .v-fall-main-slide__controls
     button.v-fall-main-slide__prev
     button.v-fall-main-slide__next
