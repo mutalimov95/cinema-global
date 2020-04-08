@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: '5mb'}));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use("/", express.static(__dirname));
+app.use("/", express.static(__dirname + '/src'));
 
 app.use(function (req, res, next) {
   if (req.path === '/v-fall') app.set('views', './src/views/v-fall');

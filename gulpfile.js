@@ -40,9 +40,9 @@ const paths = {
 		templates: '.src/html/public/'
 	},
 	output: {
-		css: './public/css/',
-		js: './public/js/',
-		images: './public/img/'
+		css: './src/assets/css/',
+		js: './src/assets/js/',
+		images: './src/assets/img/'
 	},
 	public: './public/',
 };
