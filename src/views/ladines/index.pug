@@ -1,278 +1,230 @@
-doctype html
-html
-  head
-    title ladines Cinema
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel='stylesheet' href='/assets/css/style.css')
-    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet")
-    
-  body.ladines
-    header.ladines-header.grid
-      .ladines__container.grid.grid-v-center.grid-v-between
-        .ladines-header__logo
-          img.ladines-header__img(src="/assets/img/ladines/logo-ladines.png", alt="ladines")
-        nav.ladines-header__nav
-          a.ladines-header__link(href="#") Новинки
-          a.ladines-header__link(href="#") Фильмы
-          a.ladines-header__link(href="#") Мультфильмы
-          a.ladines-header__link(href="#") Новости
-          a.ladines-header__link(href="#") Кинотеатры
-          a.ladines-header__link(href="#") Контакты
-        form.ladines-header__search
-          input.ladines-header__input(type="text", placeholder="Найти")
+include ../base/ladines/header
 
+main.ladines-main
+  section.ladines-main-slider.owl-carousel
+    .ladines-main-slide
+      img(src="/assets/img/ladines/slide1.jpg", alt="")
+      .ladines-main-slide__content
+        p.ladines-main-slide__label
+          span.ladines-main-slide__text 2019
+          span.ladines-main-slide__text Мелодрамма
+        h3.ladines-main-slide__title Фаворитка
+    .ladines-main-slide
+      img(src="/assets/img/ladines/slide1.jpg", alt="")
+      .ladines-main-slide__content
+        p.ladines-main-slide__label
+          span.ladines-main-slide__text 2019
+          span.ladines-main-slide__text Мелодрамма
+        h3.ladines-main-slide__title Фаворитка
+    .ladines-main-slide
+      img(src="/assets/img/ladines/slide1.jpg", alt="")
+      .ladines-main-slide__content
+        p.ladines-main-slide__label
+          span.ladines-main-slide__text 2019
+          span.ladines-main-slide__text Мелодрамма
+        h3.ladines-main-slide__title Фаворитка
+    .ladines-main-slide
+      img(src="/assets/img/ladines/slide1.jpg", alt="")
+      .ladines-main-slide__content
+        p.ladines-main-slide__label
+          span.ladines-main-slide__text 2019
+          span.ladines-main-slide__text Мелодрамма
+        h3.ladines-main-slide__title Фаворитка
+  .ladines-main-slide__controls
+    button.ladines-main-slide__prev
+    button.ladines-main-slide__next
+  .ladines__container.ladines__container--main
+    section.ladines-main-block
+      h2.ladines-main-block__header Новинки
+      .ladines-main-block__container
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+    section.ladines-main-block
+      h2.ladines-main-block__header Фильмы
+      p.ladines-main-block__subtitle Коллекция лучших мультфильмов для детей и родителей 
+      .ladines-main-block__container
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+    section.ladines-main-block
+      h2.ladines-main-block__header Мультфильмы
+      p.ladines-main-block__subtitle Коллекция лучших мультфильмов для детей и родителей 
+      .ladines-main-block__container
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+    section.ladines-main-block
+      h2.ladines-main-block__header Новости
+      p.ladines-main-block__subtitle Коллекция лучших мультфильмов для детей и родителей 
+      .ladines-main-block__container
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img5.jpg", alt="")
+          p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img6.jpg", alt="")
+          p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img7.jpg", alt="")
+          p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img8.jpg", alt="")
+          p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
+    section.ladines-main-block.ladines-main-block__carousel
+      h2.ladines-main-block__header Planeta online
+      .ladines-main-block__container.ladines-main-block__container-carousel.owl-carousel
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img5.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img6.jpg", alt="")
+          h3.ladines-main-block__title Стекло
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img7.jpg", alt="")
+          h3.ladines-main-block__title Море соблазна
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2019
+            span.ladines-main-block__elem Боевик
+        a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
+          img.ladines-main-block__img(src="/assets/img/ladines/img8.jpg", alt="")
+          h3.ladines-main-block__title Фаворитка
+          p.ladines-main-block__content
+            span.ladines-main-block__elem 2011
+            span.ladines-main-block__elem Мелодрамма
+      .ladines-main-block__carousel-btn
+        button.ladines-main-block__carousel-left
+        button.ladines-main-block__carousel-right
+.ladines-modal
+  .ladines-modal__container
+    .ladines-modal__close
+    .ladines-modal__header
+      h3.ladines-modal__header-title Фаворитка
+      h5.ladines-modal__header-subtitle The favourite
+    .ladines-modal__content
+      .ladines-modal__content-video
+        img(src="/assets/img/ladines/video.jpg")
+        .ladines-modal__content-mask
+        button.ladines-modal__content-btn
+    .ladines-modal__footer 
+      .ladines-inner__content-poster
+        img.ladines-inner__content-img(src="/assets/img/ladines/inner.jpg")
+      .ladines-inner__content-description.grid.grid-column
+        .ladines-inner__content-list
+          .ladines-inner__content-item
+            span Год
+            span 2015
+          .ladines-inner__content-item
+            span Страна
+            span Англия
+          .ladines-inner__content-item
+            span Жанр
+            span Комедия
+        span.ladines-inner__content-text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sedopk quia consequuntur magni dolores eos qui rationesopl voluptatem sequi nesciunt. Neque porro quisquameo est, qui dolorem ipsum quia dolor sit amet, eopsmiep consectetur, adipisci velit, seisud quia non numquam eius modi tempora incidunt ut labore et dolore wopeir magnam aliquam quaerat voluptatem eoplmuriquisqu
+        span.ladines-inner__content-slide Развернуть
 
-    main.ladines-main
-      section.ladines-main-slider.owl-carousel
-        .ladines-main-slide
-          img(src="/assets/img/ladines/slide1.jpg", alt="")
-          .ladines-main-slide__content
-            p.ladines-main-slide__label
-              span.ladines-main-slide__text 2019
-              span.ladines-main-slide__text Мелодрамма
-            h3.ladines-main-slide__title Фаворитка
-        .ladines-main-slide
-          img(src="/assets/img/ladines/slide1.jpg", alt="")
-          .ladines-main-slide__content
-            p.ladines-main-slide__label
-              span.ladines-main-slide__text 2019
-              span.ladines-main-slide__text Мелодрамма
-            h3.ladines-main-slide__title Фаворитка
-        .ladines-main-slide
-          img(src="/assets/img/ladines/slide1.jpg", alt="")
-          .ladines-main-slide__content
-            p.ladines-main-slide__label
-              span.ladines-main-slide__text 2019
-              span.ladines-main-slide__text Мелодрамма
-            h3.ladines-main-slide__title Фаворитка
-        .ladines-main-slide
-          img(src="/assets/img/ladines/slide1.jpg", alt="")
-          .ladines-main-slide__content
-            p.ladines-main-slide__label
-              span.ladines-main-slide__text 2019
-              span.ladines-main-slide__text Мелодрамма
-            h3.ladines-main-slide__title Фаворитка
-      .ladines-main-slide__controls
-        button.ladines-main-slide__prev
-        button.ladines-main-slide__next
-      .ladines__container.ladines__container--main
-        section.ladines-main-block
-          h2.ladines-main-block__header Новинки
-          .ladines-main-block__container
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-        section.ladines-main-block
-          h2.ladines-main-block__header Фильмы
-          p.ladines-main-block__subtitle Коллекция лучших мультфильмов для детей и родителей 
-          .ladines-main-block__container
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-        section.ladines-main-block
-          h2.ladines-main-block__header Мультфильмы
-          p.ladines-main-block__subtitle Коллекция лучших мультфильмов для детей и родителей 
-          .ladines-main-block__container
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img1.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img2.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img3.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-        section.ladines-main-block
-          h2.ladines-main-block__header Новости
-          p.ladines-main-block__subtitle Коллекция лучших мультфильмов для детей и родителей 
-          .ladines-main-block__container
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img5.jpg", alt="")
-              p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img6.jpg", alt="")
-              p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img7.jpg", alt="")
-              p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img8.jpg", alt="")
-              p.ladines-main-block__text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id 
-        section.ladines-main-block.ladines-main-block__carousel
-          h2.ladines-main-block__header Planeta online
-          .ladines-main-block__container.ladines-main-block__container-carousel.owl-carousel
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img5.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img6.jpg", alt="")
-              h3.ladines-main-block__title Стекло
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img7.jpg", alt="")
-              h3.ladines-main-block__title Море соблазна
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2019
-                span.ladines-main-block__elem Боевик
-            a.ladines-main-block__item.ladines-main-block__item--lg(href="#")
-              img.ladines-main-block__img(src="/assets/img/ladines/img8.jpg", alt="")
-              h3.ladines-main-block__title Фаворитка
-              p.ladines-main-block__content
-                span.ladines-main-block__elem 2011
-                span.ladines-main-block__elem Мелодрамма
-          .ladines-main-block__carousel-btn
-            button.ladines-main-block__carousel-left
-            button.ladines-main-block__carousel-right
-    .ladines-modal
-      .ladines-modal__container
-        .ladines-modal__close
-        .ladines-modal__header
-          h3.ladines-modal__header-title Фаворитка
-          h5.ladines-modal__header-subtitle The favourite
-        .ladines-modal__content
-          .ladines-modal__content-video
-            img(src="/assets/img/ladines/video.jpg")
-            .ladines-modal__content-mask
-            button.ladines-modal__content-btn
-        .ladines-modal__footer 
-          .ladines-inner__content-poster
-            img.ladines-inner__content-img(src="/assets/img/ladines/inner.jpg")
-          .ladines-inner__content-description.grid.grid-column
-            .ladines-inner__content-list
-              .ladines-inner__content-item
-                span Год
-                span 2015
-              .ladines-inner__content-item
-                span Страна
-                span Англия
-              .ladines-inner__content-item
-                span Жанр
-                span Комедия
-            span.ladines-inner__content-text Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est eopksio laborum. Sed ut perspiciatis unde omnis istpoe natus error sit voluptatem accusantium doloremque eopsloi laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunot explicabo. Nemo ernim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sedopk quia consequuntur magni dolores eos qui rationesopl voluptatem sequi nesciunt. Neque porro quisquameo est, qui dolorem ipsum quia dolor sit amet, eopsmiep consectetur, adipisci velit, seisud quia non numquam eius modi tempora incidunt ut labore et dolore wopeir magnam aliquam quaerat voluptatem eoplmuriquisqu
-            span.ladines-inner__content-slide Развернуть
-
-
-
-    footer.ladines-footer.grid
-      .ladines__container.grid.grid-v-center.grid-v-between
-        .ladines-footer__logo
-          img.ladines-footer__img(src="/assets/img/ladines/logo-ladines.png", alt="ladines")
-        nav.ladines-footer__nav
-          a.ladines-footer__link(href="#") Новинки
-          a.ladines-footer__link(href="#") Фильмы
-          a.ladines-footer__link(href="#") Мультфильмы
-          a.ladines-footer__link(href="#") Новости
-          a.ladines-footer__link(href="#") Кинотеатры
-          a.ladines-footer__link(href="#") Контакты
-        .ladines-footer__social.grid.grid-v-center
-          span Присоединяйтесь
-          .ladines-footer__social-nav
-            a.ladines-footer__social-link(href="#")
-              img(src="/assets/img/ladines/vk.png")
-            a.ladines-footer__social-link(href="#")
-              img(src="/assets/img/ladines/fb.png")
-            a.ladines-footer__social-link(href="#")
-              img(src="/assets/img/ladines/ok.png")
-    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-    script(src="/assets/js/script.js")
+include ../base/ladines/footer

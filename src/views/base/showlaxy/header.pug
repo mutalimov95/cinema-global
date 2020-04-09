@@ -1,0 +1,29 @@
+doctype html
+html
+  head
+    title showlaxy Cinema
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet' href='/assets/css/style.css')
+    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet")
+    
+  body.showlaxy
+    header.showlaxy-header.grid
+      .grid.grid-v-center.grid-v-between.grid-column.showlaxy-block
+        .showlaxy-header-top
+          .showlaxy__container.grid.grid-v-center.grid-v-between
+            .showlaxy-header__logo
+              img.showlaxy-header__img(src="/assets/img/showlaxy/logo-showlaxy.png", alt="showlaxy")
+            form.showlaxy-header__search
+              input.showlaxy-header__input(type="text", placeholder="Найти")
+            .showlaxy-header__mask
+        .showlaxy-header-bottom
+          .showlaxy__container.grid.grid-v-center
+            nav.showlaxy-header__nav
+              a.showlaxy-header__link(href="#") Новинки
+              a.showlaxy-header__link(href="#") Фильмы
+              a.showlaxy-header__link(href="#") Мультфильмы
+              a.showlaxy-header__link(href="#") Новости
+              a.showlaxy-header__link(href="#") Кинотеатры
+              a.showlaxy-header__link(href="#") Контакты

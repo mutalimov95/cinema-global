@@ -201,7 +201,7 @@ html {
     }
 
     &__search:before {
-      content: url('../img/v-fall/search.png');
+      content: url('../assets/img/v-fall/search.png');
       width: 16px;
       height: 16px;
       position: absolute;
@@ -263,7 +263,7 @@ html {
 
       &__prev {
         margin-left: 80px;
-        background: transparent url(../img/v-fall/arrow.png)no-repeat;
+        background: transparent url(../assets/img/v-fall/arrow.png)no-repeat;
         width: 27px;
         height: 42px;
         border: none;
@@ -271,7 +271,7 @@ html {
         cursor: pointer;
 
         &:hover {
-          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
+          background: transparent url(../assets/img/v-fall/arrow-hover.png)no-repeat;
           transform: rotate(-180deg);
         }
       }
@@ -279,7 +279,7 @@ html {
       &__next {
         margin-right: 80px;
         margin-left: 80px;
-        background: transparent url(../img/v-fall/arrow.png)no-repeat;
+        background: transparent url(../assets/img/v-fall/arrow.png)no-repeat;
         width: 27px;
         height: 42px;
         border: none;
@@ -288,7 +288,7 @@ html {
         cursor: pointer;
 
         &:hover {
-          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
+          background: transparent url(../assets/img/v-fall/arrow-hover.png)no-repeat;
           transform: rotate(0deg);
         }
       }
@@ -349,7 +349,7 @@ html {
         }
 
         &-left {
-          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
+          background: transparent url(../assets/img/v-fall/arrow-hover.png)no-repeat;
           width: 27px;
           height: 42px;
           margin-left: 24px;
@@ -362,7 +362,7 @@ html {
         }
 
         &-right {
-          background: transparent url(../img/v-fall/arrow-hover.png)no-repeat;
+          background: transparent url(../assets/img/v-fall/arrow-hover.png)no-repeat;
           width: 27px;
           height: 42px;
           margin-right: 24px;
@@ -603,7 +603,7 @@ html {
       }
 
       &-btn {
-        background: url(../img/v-fall/play.png)no-repeat;
+        background: url(../assets/img/v-fall/play.png)no-repeat;
         margin: auto;
         display: block;
         border: none;
@@ -806,7 +806,7 @@ html {
     }
 
     &__search:before {
-      content: url('../img/ladines/search.png');
+      content: url('../assets/img/ladines/search.png');
       width: 16px;
       height: 16px;
       position: absolute;
@@ -867,7 +867,7 @@ html {
       }
 
       &__prev {
-        background:  rgba(255, 255, 255, 0.2) url(../img/ladines/arrow.png)no-repeat center center;
+        background:  rgba(255, 255, 255, 0.2) url(../assets/img/ladines/arrow.png)no-repeat center center;
         width: 91px;
         height: 91px;
         border: none;
@@ -877,13 +877,13 @@ html {
         border-radius: 50%;
 
         &:hover {
-          background: rgba(255, 255, 255, 0.2) url(../img/ladines/arrow-hover.png)no-repeat center center;
+          background: rgba(255, 255, 255, 0.2) url(../assets/img/ladines/arrow-hover.png)no-repeat center center;
           transform: rotate(-180deg);
         }
       }
 
       &__next {
-        background: rgba(255, 255, 255, 0.2) url(../img/ladines/arrow.png)no-repeat center center;
+        background: rgba(255, 255, 255, 0.2) url(../assets/img/ladines/arrow.png)no-repeat center center;
         width: 91px;
         height: 91px;
         border: none;
@@ -893,7 +893,7 @@ html {
         cursor: pointer;
 
         &:hover {
-          background: rgba(255, 255, 255, 0.2) url(../img/ladines/arrow-hover.png)no-repeat center center;
+          background: rgba(255, 255, 255, 0.2) url(../assets/img/ladines/arrow-hover.png)no-repeat center center;
           transform: rotate(0deg);
         }
       }
@@ -958,7 +958,7 @@ html {
         }
 
         &-left {
-          background: transparent url(../img/ladines/arrow-hover.png)no-repeat 100% 100%;
+          background: transparent url(../assets/img/ladines/arrow-hover.png)no-repeat 100% 100%;
           background-size: cover;
           width: 42px;
           height: 42px;
@@ -972,7 +972,7 @@ html {
         }
 
         &-right {
-          background: transparent url(../img/ladines/arrow-hover.png)no-repeat;
+          background: transparent url(../assets/img/ladines/arrow-hover.png)no-repeat;
           background-size: cover;
           width: 42px;
           height: 42px;
@@ -1110,7 +1110,7 @@ html {
           height: 7px;
           content: '';
           position: absolute;
-          background: url(../img/ladines/select-arr.png)no-repeat;
+          background: url(../assets/img/ladines/select-arr.png)no-repeat;
           right: 21px;
           z-index: 2;
         }
@@ -1350,7 +1350,7 @@ html {
       }
 
       &-btn {
-        background: url(../img/ladines/play.png)no-repeat;
+        background: url(../assets/img/ladines/play.png)no-repeat;
         margin: auto;
         display: block;
         border: none;
@@ -1448,7 +1448,7 @@ html {
     overflow-y: scroll;
 
     &__close {
-      background: url(../img/ladines/close.png)no-repeat;
+      background: url(../assets/img/ladines/close.png)no-repeat;
       width: 42px;
       height: 42px;
       position: absolute;
@@ -1507,7 +1507,7 @@ html {
       &-btn {
         border: none;
         outline: none;
-        background: url(../img/ladines/play.png)no-repeat;
+        background: url(../assets/img/ladines/play.png)no-repeat;
         width: 78px;
         height: 78px;
         cursor: pointer;
@@ -1632,7 +1632,7 @@ html {
     }
 
     &__search:before {
-      content: url('../img/showlaxy/search.png');
+      content: url('../assets/img/showlaxy/search.png');
       width: 16px;
       height: 16px;
       position: absolute;
@@ -1762,7 +1762,7 @@ html {
           height: 7px;
           content: '';
           position: absolute;
-          background: url(../img/showlaxy/select-arr.png)no-repeat;
+          background: url(../assets/img/showlaxy/select-arr.png)no-repeat;
           right: 21px;
           z-index: 2;
         }
@@ -1884,7 +1884,7 @@ html {
       }
 
       &__next {
-        background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+        background: transparent url(../assets/img/showlaxy/arrow.png)no-repeat;
         width: 25px;
         height: 47px;
         border: none;
@@ -1954,7 +1954,7 @@ html {
         }
 
         &-left {
-          background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+          background: transparent url(../assets/img/showlaxy/arrow.png)no-repeat;
           width: 25px;
           height: 47px;
           margin-left: 24px;
@@ -1966,7 +1966,7 @@ html {
         }
 
         &-right {
-          background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+          background: transparent url(../assets/img/showlaxy/arrow.png)no-repeat;
           width: 25px;
           height: 47px;
           margin-right: 24px;
@@ -2030,7 +2030,7 @@ html {
             width: 25px;
             height: 47px;
             right: -40px;
-            background: transparent url(../img/showlaxy/arrow.png)no-repeat;
+            background: transparent url(../assets/img/showlaxy/arrow.png)no-repeat;
             border: none;
             outline: none;
             transform: rotate(180deg) translateY(50%);
@@ -2242,7 +2242,7 @@ html {
       }
 
       &-btn {
-        background: url(../img/showlaxy/play.png)no-repeat;
+        background: url(../assets/img/showlaxy/play.png)no-repeat;
         margin: auto;
         display: block;
         border: none;

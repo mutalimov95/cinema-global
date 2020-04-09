@@ -1,57 +1,11 @@
-doctype html
-html
-  head
-    title ladines Cinema
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel='stylesheet' href='/assets/css/style.css')
-    link(href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet")
-    
-  body.ladines
-    header.ladines-header.grid
-      .ladines__container.grid.grid-v-center.grid-v-between
-        .ladines-header__logo
-          img.ladines-header__img(src="/assets/img/ladines/logo-ladines.png", alt="ladines")
-        nav.ladines-header__nav
-          a.ladines-header__link(href="#") Новинки
-          a.ladines-header__link(href="#") Фильмы
-          a.ladines-header__link(href="#") Мультфильмы
-          a.ladines-header__link(href="#") Новости
-          a.ladines-header__link(href="#") Кинотеатры
-          a.ladines-header__link(href="#") Контакты
-        form.ladines-header__search
-          input.ladines-header__input(type="text", placeholder="Найти")
+include ../base/ladines/header
 
+main.ladines-main
+  .ladines__container.grid.grid-column.ladines__container--not-found
+    section.ladines-not-found
+      img.ladines-not-found__img(src="/assets/img/ladines/404.png", alt="404")
+      p.ladines-not-found__text КАЖЕТСЯ, ЧТО-ТО ПОШЛО НЕ ТАК
+      p.ladines-not-found__subtext К сожалению, запрашиваемая страница не найдена, перейдите на 
+        a(href="#") главную
 
-    main.ladines-main
-      .ladines__container.grid.grid-column.ladines__container--not-found
-        section.ladines-not-found
-          img.ladines-not-found__img(src="/assets/img/ladines/404.png", alt="404")
-          p.ladines-not-found__text КАЖЕТСЯ, ЧТО-ТО ПОШЛО НЕ ТАК
-          p.ladines-not-found__subtext К сожалению, запрашиваемая страница не найдена, перейдите на 
-            a(href="#") главную
-
-    footer.ladines-footer.grid
-      .ladines__container.grid.grid-v-center.grid-v-between
-        .ladines-footer__logo
-          img.ladines-footer__img(src="/assets/img/ladines/logo-ladines.png", alt="ladines")
-        nav.ladines-footer__nav
-          a.ladines-footer__link(href="#") Новинки
-          a.ladines-footer__link(href="#") Фильмы
-          a.ladines-footer__link(href="#") Мультфильмы
-          a.ladines-footer__link(href="#") Новости
-          a.ladines-footer__link(href="#") Кинотеатры
-          a.ladines-footer__link(href="#") Контакты
-        .ladines-footer__social.grid.grid-v-center
-          span Присоединяйтесь
-          .ladines-footer__social-nav
-            a.ladines-footer__social-link(href="#")
-              img(src="/assets/img/ladines/vk.png")
-            a.ladines-footer__social-link(href="#")
-              img(src="/assets/img/ladines/fb.png")
-            a.ladines-footer__social-link(href="#")
-              img(src="/assets/img/ladines/ok.png")
-    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js")
-    script(src="/assets/js/script.js")
+include ../base/ladines/footer
